@@ -9,11 +9,11 @@ nav: true
 
 #### Bridging Expressiveness and Performance for Service Mesh Policies
 <ul>
-    <li>[Jan 25] IIT Delhi</li>
-    <li>[Jan 25] IIIT Delhi</li>
-    <li>[Mar 25] UIUC Systems and Networking Group</li>
-    <li>[Mar 25] TU Delft PL Group</li>
     <li>[Apr 25] <a href="https://www.asplos-conference.org/asplos2025/">ASPLOS'25 Program</a></li>
+    <li>[Mar 25] TU Delft PL Group</li>
+    <li>[Mar 25] UIUC Systems and Networking Group</li>
+    <li>[Jan 25] IIIT Delhi</li>
+    <li>[Jan 25] IIT Delhi</li>
 </ul>
 
 #### Efficient Microservice Communication
