@@ -8,6 +8,27 @@ abbr = {EuroSys '26},
 format = {Conference},
 }
 
+@inproceedings{JointLearning,
+author = {Yuan, Samuel and Saxena, Divyanshu and Chen, Jiayi and Sharma, Nihal and Akella, Aditya},
+title = {A Joint Learning Approach to Hardware Caching and Prefetching},
+booktitle = {9th Workshop on Machine Learning for Systems. Held at 39th Conference on Neural Information Processing Systems (NeurIPS 2023).},
+year = {2025},
+ws = {MLForSys},
+abstract = {Several learned policies have been proposed to replace heuristics for scheduling, caching, and other system components in modern systems. By leveraging diverse features, learning from historical trends, and predicting future behaviors, such models promise to keep pace with ever-increasing workload dynamism and continuous hardware evolution. However, policies trained in isolation may still achieve suboptimal performance when placed together. In this paper, we inspect one such instance in the domain of hardware caching -- for the policies of cache replacement and prefetching. We argue that these two policies are bidirectionally interdependent and make the case for training the two \textit{jointly}. We propose a joint learning approach based on developing shared representations for the features used by the two policies. We present two approaches to develop these shared representations, one based on a joint encoder and another based on contrastive learning of the embeddings, and demonstrate promising preliminary results for both of these. Finally, we lay down an agenda for future research in this direction.},
+abbr = {NeurIPS '25},
+format = {Workshop}
+}
+
+@inproceedings{PolicySmith,
+author = {Dwivedula, Rohit and Saxena, Divyanshu and Akella, Aditya and Chaudhuri, Swarat and Kim, Daehyeok},
+title = {Man-Made Heuristics Are Dead. Long Live Code Generators!},
+booktitle = {24th ACM Workshop on Hot Topics in Networks.},
+year = {2025},
+abstract = {Policy design for various systems controllers has conventionally been a manual process, with domain experts carefully tailoring heuristics for the specific instance under which the policy will be deployed. In this paper, we re-imagine policy design via a novel automated search technique fueled by recent advances in generative models, specifically Large Language Model (LLM)-driven code generation. We outline the design and implementation of PolicySmith, a framework that applies LLMs to synthesize instance-optimal heuristics. We apply PolicySmith to two long-standing systems policies - web caching and congestion control, highlighting the opportunities unraveled by this LLM-driven heuristic search. For caching, PolicySmith discovers heuristics that outperform established baselines on standard open-source traces. For congestion control, we show that PolicySmith can generate safe policies that can directly run inside the Linux kernel.},
+abbr = {HotNets '25},
+format = {Workshop}
+}
+
 @inproceedings{GuardrailsHotOS,
 title={How I learned to stop worrying and love learned OS policies},
 author={Divyanshu Saxena and Jiayi Chen and Sujay Yadalam and Yeonju Ro and Rohit Dwivedula and Eric Campbell and Aditya Akella and Christopher Rossbach and Michael Swift},
@@ -55,7 +76,7 @@ author = {Saxena, Divyanshu and Sharma, Nihal and Kim, Donghyun and Dwivedula, R
 title = {On a Foundation Model for Operating Systems},
 booktitle = {7th Workshop on Machine Learning for Systems. Held at 37th Conference on Neural Information Processing Systems (NeurIPS 2023).},
 year = {2023},
-ws = {MLSys},
+ws = {MLForSys},
 abstract = {This paper lays down the research agenda for a domain-specific foundation model for operating systems (OSes). Our case for a foundation model revolves around the observations that several OS components {such as CPU, memory, and network subsystems} are interrelated and that OS traces offer the ideal dataset for a foundation model to grasp the intricacies of diverse OS components and their behavior in varying environments and workloads. We discuss a wide range of possibilities that then arise, from employing foundation models as policy agents to utilizing them as generators and predictors to assist traditional OS control algorithms. Our hope is that this paper spurs further research into OS foundation models and creating the next generation of operating systems for the evolving computing landscape.},
 url = {https://arxiv.org/abs/2312.07813},
 pdf = {https://utns.cs.utexas.edu/assets/papers/mlsys23-fm4os.pdf},

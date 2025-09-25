@@ -24,3 +24,27 @@
 "Khalid":
   - firstname: ["Junaid"]
     url: https://pages.cs.wisc.edu/~junaid/
+"Chen":
+  - firstname: ["Jane", "Jiayi"]
+    url: https://janecjy.github.io/
+"Dillig":
+  - firstname: ["Isil"]
+    url: https://www.cs.utexas.edu/~isil/
+"Rossbach":
+  - firstname: ["Christopher", "Chris"]
+    url: https://www.cs.utexas.edu/~rossbach/
+"Swift":
+  - firstname: ["Michael", "Mike"]
+    url: https://pages.cs.wisc.edu/~swift/
+"Chaudhuri":
+  - firstname: ["Swarat"]
+    url: https://www.cs.utexas.edu/~swarat/
+"Godfrey":
+  - firstname: ["Brighten", "Brighten P"]
+    url: https://pbg.cs.illinois.edu/
+"Shakkottai":
+  - firstname: ["Srinivas"]
+    url: https://cesg.tamu.edu/faculty/srinivas-shakkottai/
+"Yadalam":
+  - firstname: ["Sujay"]
+    url: https://pages.cs.wisc.edu/~sujayyadalam/
