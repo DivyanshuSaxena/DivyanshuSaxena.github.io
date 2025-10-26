@@ -16,7 +16,7 @@ social: true  # includes social icons at the bottom of the page
 
 I am a graduate student at the [Department of Computer Sciences](https://cs.utexas.edu){:target="_blank"}, [University of Texas at Austin](https://utexas.edu){:target="_blank"}.
 I am fortunate to be advised by [Prof. Aditya Akella](https://www.cs.utexas.edu/~akella/) at the UT Networked Systems ([UTNS](https://utns.cs.utexas.edu/)) lab.
-I am also a part of the [LDOS](https://ldos.utexas.edu/) project where we are building next-generation Operating Systems that can leverage learning to improve performance and adaptability.
+I also collaborate closely with researchers at the [LDOS](https://ldos.utexas.edu/) project where we are building next-generation Operating Systems that can leverage learning to improve performance and adaptability.
 <!-- Earlier I was an RA in the same group at the University of Wisconsin-Madison. -->
 
 I am broadly interested in Systems and Networking.
