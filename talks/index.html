@@ -12,7 +12,7 @@
   Divyanshu  Saxena
 
 
-  | blog
+  | talks
 
 </title>
 <meta name="description" content="Website for Divyanshu Saxena, UT Austin, IIT Delhi
@@ -24,8 +24,8 @@
 " />
 <meta property="og:type" content="object" />
 <meta property="og:title" content="" />
-<meta property="og:url" content="https://divyanshusaxena.github.io/blog/index.html" />
-<meta property="og:description" content="blog" />
+<meta property="og:url" content="https://divyanshusaxena.github.io/talks/" />
+<meta property="og:description" content="talks" />
 <meta property="og:image" content="" />
 
 
@@ -46,7 +46,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="https://divyanshusaxena.github.io/blog/">
+<link rel="canonical" href="https://divyanshusaxena.github.io/talks/">
 
 
 <!-- Dark Mode -->
@@ -88,11 +88,9 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
-              
-              <span class="sr-only">(current)</span>
               
             </a>
           </li>
@@ -135,9 +133,11 @@
           
           
           
-          <li class="nav-item ">
+          <li class="nav-item active">
               <a class="nav-link" href="/talks/">
                 talks
+                
+                <span class="sr-only">(current)</span>
                 
               </a>
           </li>
@@ -145,8 +145,8 @@
           
           
           
-            <div class = "toggle-container">
-              <a id = "light-toggle">
+            <div class="toggle-container">
+              <a id="light-toggle">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
               </a>
@@ -165,32 +165,44 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>dual-divy</h1>
-    <h2>a corner for some random and some planned musings</h2>
-  </div>
-  
-  
-  <ul class="post-list">
-    <!-- <br />
-    <h4 align="center">Currently under construction. Check back later for updates!</h4> -->
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2023/ebpf-workflow/">Ebpf Workflow</a></h3>
-        <p class="post-meta">June 12, 2023</p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2023/paper-writing/">importance of academic writing</a></h3>
-        <p class="post-meta">April 5, 2023</p>
-        <p>how writing papers helps your research project</p>
-      </li>
-    
-  </ul>
+  <header class="post-header">
+    <h1 class="post-title">talks</h1>
+    <p class="post-description"></p>
+  </header>
 
-  
+  <article>
+    <h4 id="bridging-expressiveness-and-performance-for-service-mesh-policies">Bridging Expressiveness and Performance for Service Mesh Policies</h4>
+<ul>
+    <li>[Apr 25] <a href="https://www.asplos-conference.org/asplos2025/" target="_blank" rel="noopener noreferrer">ASPLOS'25 Program</a>
+</li>
+    <li>[Mar 25] <a href="https://pl.ewi.tudelft.nl/" target="_blank" rel="noopener noreferrer">TU Delft PL Group</a>
+</li>
+    <li>[Mar 25] <a href="https://siebelschool.illinois.edu/research/areas/systems-and-networking" target="_blank" rel="noopener noreferrer"> UIUC Systems and Networking Group</a>
+</li>
+    <li>[Jan 25] <a href="https://github.com/pnl-iiitd" target="_blank" rel="noopener noreferrer">IIIT Delhi, Programmable Networks Lab</a>
+</li>
+    <li>[Jan 25] <a href="https://www.cse.iitd.ac.in/index.php/2011-12-29-23-14-40/talks-by-visitors#:~:text=Bridging%20Expressiveness%20and%20Performance%20for%20Service%20Mesh%20Policies" target="_blank" rel="noopener noreferrer"> IIT Delhi, CS Department</a>
+</li>
+</ul>
 
+<h4 id="efficient-microservice-communication">Efficient Microservice Communication</h4>
+<ul>
+    <li>[Dec 23] <a href="https://www.iiitd.ac.in/fsn/" target="_blank" rel="noopener noreferrer">ACM India Winter School on Full Stack Networking, IIIT Delhi</a>
+</li>
+    <li>[Oct 23] UT Austin Systems Lunch</li>
+    <li>[Jun 23] <a href="https://www.cse.chalmers.se/~elad/ApPLIED2023/" target="_blank" rel="noopener noreferrer">ApPLIED Workshop</a>
+</li>
+</ul>
+
+<h4 id="memory-deduplication-in-serverless">Memory Deduplication in Serverless</h4>
+<ul>
+    <li>[Nov 22] <a href="https://sites.utexas.edu/comparch/" target="_blank" rel="noopener noreferrer">UT Austin Computer Architecture Systems Seminar</a>
+</li>
+    <li>[Apr 22] <a href="https://2022.eurosys.org/index.html" target="_blank" rel="noopener noreferrer">EuroSys'22 Program</a>
+</li>
+</ul>
+
+  </article>
 
 </div>
 
@@ -201,8 +213,8 @@
     
 <footer class="fixed-bottom">
   <div class="container mt-0">
-    &copy; Copyright 2025 Divyanshu  Saxena.
-    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+    © Copyright 2025 Divyanshu  Saxena.
+    Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
 
     
     
