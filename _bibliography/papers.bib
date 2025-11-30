@@ -1,3 +1,26 @@
+@inproceedings{LLM4Code,
+title = {Continuous Benchmark Generation for Evaluating Enterprise-scale LLM Agents},
+author = {Divyanshu Saxena and Rishikesh Maurya and Xiaoxuan Ou and Gagan Somashekar and Shachee Mishra Gupta and Arun Iyer and Yu Kang and Chetan Bansal and Aditya Akella and Saravan Rajmohan},
+year = {2026},
+abstract={The rapid adoption of AI agents across domains has made systematic evaluation crucial for ensuring their usefulness and successful production deployment. Evaluation of AI agents typically involves using a fixed set of benchmarks and computing multiple evaluation metrics for the agent. While sufficient for simple coding tasks, these benchmarks fall short for enterprise-scale agents, where services and requirements evolve continuously and ground-truth examples are sparse. We propose a process of benchmark generation that helps evolve the benchmarks as the requirements change and perform robust evaluation of evolving AI agents. We instantiate this approach for a case study of service migration from one deployment platform to another at a large public enterprise. Our approach relies on semi-structured documents where developers express the high-level intent, and uses state-of-the-art LLMs to generate benchmarks from just a small number of such documents. Overall, this process results in a maintainable evaluation framework, enabling rapid feedback on agent performance and facilitating targeted improvements.},
+location = {Rio de Janeiro, Brazil},
+ws = {LLM4Code},
+abbr = {ICSE '26},
+pdf = {https://arxiv.org/pdf/2511.10049},
+format = {Workshop},
+}
+
+@inproceedings{Machnet,
+title = {Enabling fast networking in the public cloud},
+author = {Alireza Sanaee and Vahab Jabrayilov and Ilias Marinos and Farbod Shahinfar and Divyanshu Saxena and Kostis Kaffes and Gianni Antichi},
+year = {2026},
+abstract={Despite a decade of research, most high-performance userspace network stacks remain impractical for public cloud tenants developing their applications atop Virtual Machines (VMs). We identify two root causes: (1) reliance on specialized NIC features (e.g., flow steering, deep buffers) absent in commodity cloud vNICs, and (2) rigid execution models ill-suited to diverse application needs. We present CNet, a high-performance and flexible userspace network stack designed for public cloud VMs. CNet uses only a minimal set of vNIC features that any major cloud provider supports. It also relies on a microkernel architecture to enable flexible application execution. We evaluate CNet across three major public clouds and on production-grade applications, including a key-value store, an HTTP server, and a state-machine replication system. CNet is open-source, with the code to be released upon publication.},
+location = {Pittsburgh, PA, USA},
+pdf = {https://arxiv.org/pdf/2502.09281},
+abbr = {ASPLOS '26},
+format = {Conference},
+}
+
 @misc{CanopyEuroSys,
 title = {Canopy: Property-Driven Learning for Congestion Control}, 
 author = {Chenxi Yang and Divyanshu Saxena and Rohit Dwivedula and Kshiteej Mahajan and Swarat Chaudhuri and Aditya Akella},
@@ -5,6 +28,7 @@ year = {2026},
 abstract={Learning-based congestion controllers offer better adaptability compared to traditional heuristics. However, the unreliability of learning techniques can cause learning-based controllers to behave poorly, creating a need for formal guarantees. While methods for formally verifying learned congestion controllers exist, these methods offer binary feedback that cannot optimize the controller toward better behavior. We improve this state-of-the-art via Canopy, a new property-driven framework that integrates learning with formal reasoning in the learning loop. Canopy uses novel quantitative certification with an abstract interpreter to guide the training process, rewarding models, and evaluating robust and safe model performance on worst-case inputs. Our evaluation demonstrates that unlike state-of-the-art learned controllers, Canopy-trained controllers provide both adaptability and worst-case reliability across a range of network conditions.},
 location = {Edinburgh, Scotland},
 abbr = {EuroSys '26},
+code = {https://github.com/ldos-project/Canopy},
 format = {Conference},
 }
 
@@ -15,6 +39,8 @@ booktitle = {9th Workshop on Machine Learning for Systems. Held at 39th Conferen
 year = {2025},
 ws = {MLForSys},
 abstract = {Several learned policies have been proposed to replace heuristics for scheduling, caching, and other system components in modern systems. By leveraging diverse features, learning from historical trends, and predicting future behaviors, such models promise to keep pace with ever-increasing workload dynamism and continuous hardware evolution. However, policies trained in isolation may still achieve suboptimal performance when placed together. In this paper, we inspect one such instance in the domain of hardware caching -- for the policies of cache replacement and prefetching. We argue that these two policies are bidirectionally interdependent and make the case for training the two \textit{jointly}. We propose a joint learning approach based on developing shared representations for the features used by the two policies. We present two approaches to develop these shared representations, one based on a joint encoder and another based on contrastive learning of the embeddings, and demonstrate promising preliminary results for both of these. Finally, we lay down an agenda for future research in this direction.},
+url = {https://arxiv.org/abs/2510.10862},
+pdf = {https://openreview.net/pdf?id=1tpq5TFopY},
 abbr = {NeurIPS '25},
 format = {Workshop}
 }
@@ -25,6 +51,9 @@ title = {Man-Made Heuristics Are Dead. Long Live Code Generators!},
 booktitle = {24th ACM Workshop on Hot Topics in Networks.},
 year = {2025},
 abstract = {Policy design for various systems controllers has conventionally been a manual process, with domain experts carefully tailoring heuristics for the specific instance under which the policy will be deployed. In this paper, we re-imagine policy design via a novel automated search technique fueled by recent advances in generative models, specifically Large Language Model (LLM)-driven code generation. We outline the design and implementation of PolicySmith, a framework that applies LLMs to synthesize instance-optimal heuristics. We apply PolicySmith to two long-standing systems policies - web caching and congestion control, highlighting the opportunities unraveled by this LLM-driven heuristic search. For caching, PolicySmith discovers heuristics that outperform established baselines on standard open-source traces. For congestion control, we show that PolicySmith can generate safe policies that can directly run inside the Linux kernel.},
+url = {https://dl.acm.org/doi/10.1145/3772356.3772413},
+pdf = {https://dl.acm.org/doi/pdf/10.1145/3772356.3772413},
+code = {https://github.com/ldos-project/policysmith},
 abbr = {HotNets '25},
 format = {Workshop}
 }
