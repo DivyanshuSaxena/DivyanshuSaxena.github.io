@@ -1,3 +1,15 @@
+@inproceedings{GalileoNSDI,
+title = {Towards Performance Robustness for Microservices},
+author = {Divyanshu Saxena and Gaurav Vipat and Jiaxin Lin and  Jingbo Wang and  Isil Dillig and Sanjay Shakkottai and Aditya Akella},
+year = {2026},
+abstract={Microservices are foundational to modern distributed applications, enabling modular design and scalability. However, they face performance variability due to environmental factors like workload burstiness, resource contention, and shared dependencies. Existing microservice controllers, such as autoscalers and admission controllers, struggle to ensure good performance, often causing several Service Level Objective (SLO) violations. We argue that this is because controller decision-making is uninformed, lacking guidance about robustness to environmental factors.
+
+We propose the concept of run-time ``performance robustness certificates'' ({PeRC}) to address this limitation. A {PeRC} provides statistical bounds on tail latencies of specific request types under a range of environmental perturbations. We show how to leverage a queueing-theoretic model of microservice performance to quickly derive actionable {PeRC}s. We introduce Galileo, a framework that integrates {PeRC}s with two state-of-the-art learned controllers to guide robust actions toward meeting SLOs. Experimental results with real-world benchmarks validate the effectiveness of {PeRC}s in ensuring robust microservice performance.},
+location = {Renton, WA, USA},
+abbr = {NSDI '26},
+format = {Conference},
+}
+
 @inproceedings{LLM4Code,
 title = {Continuous Benchmark Generation for Evaluating Enterprise-scale LLM Agents},
 author = {Divyanshu Saxena and Rishikesh Maurya and Xiaoxuan Ou and Gagan Somashekar and Shachee Mishra Gupta and Arun Iyer and Yu Kang and Chetan Bansal and Aditya Akella and Saravan Rajmohan},
@@ -28,6 +40,7 @@ year = {2026},
 abstract={Learning-based congestion controllers offer better adaptability compared to traditional heuristics. However, the unreliability of learning techniques can cause learning-based controllers to behave poorly, creating a need for formal guarantees. While methods for formally verifying learned congestion controllers exist, these methods offer binary feedback that cannot optimize the controller toward better behavior. We improve this state-of-the-art via Canopy, a new property-driven framework that integrates learning with formal reasoning in the learning loop. Canopy uses novel quantitative certification with an abstract interpreter to guide the training process, rewarding models, and evaluating robust and safe model performance on worst-case inputs. Our evaluation demonstrates that unlike state-of-the-art learned controllers, Canopy-trained controllers provide both adaptability and worst-case reliability across a range of network conditions.},
 location = {Edinburgh, Scotland},
 abbr = {EuroSys '26},
+url = {https://arxiv.org/abs/2412.10915},
 code = {https://github.com/ldos-project/Canopy},
 format = {Conference},
 }
