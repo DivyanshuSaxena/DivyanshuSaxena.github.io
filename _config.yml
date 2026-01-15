@@ -79,9 +79,9 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: dual-divy  # your blog must have a name for it to show up in the nav bar
-blog_description: a corner for some random and some planned musings
-permalink: /blog/:year/:title/
+blog_name: # dual-divy  # your blog must have a name for it to show up in the nav bar
+blog_description: # a corner for some random and some planned musings
+permalink: # /blog/:year/:title/
 
 # Pagination
 pagination:
