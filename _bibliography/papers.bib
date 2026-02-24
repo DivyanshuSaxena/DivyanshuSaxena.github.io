@@ -1,3 +1,15 @@
+@msic{VulcanArxiv,
+title = {Vulcan: Instance-Optimal Systems Heuristics Through LLM-Driven Search},
+author = {Rohit Dwivedula and Divyanshu Saxena and Sujay Yadalam and Daehyeok Kim and Aditya Akella},
+year = {2026},
+abstract={Resource-management tasks in modern operating and distributed systems continue to rely primarily on hand-designed heuristics for tasks such as scheduling, caching, or active queue management. Designing performant heuristics is an expensive, time-consuming process that we are forced to continuously go through due to the constant flux of hardware, workloads and environments.
+We propose a new alternative: synthesizing instance-optimal heuristics -- specialized for the exact workloads and hardware where they will be deployed -- using code-generating large language models (LLMs). To make this synthesis tractable, Vulcan separates policy and mechanism through LLM-friendly, task-agnostic interfaces. With these interfaces, users specify the inputs and objectives of their desired policy, while Vulcan searches for performant policies via evolutionary search over LLM-generated code. This interface is expressive enough to capture a wide range of system policies, yet sufficiently constrained to allow even small, inexpensive LLMs to generate correct and executable code.
+We use Vulcan to synthesize performant heuristics for cache eviction and memory tiering, and find that these heuristics outperform all human-designed state-of-the-art algorithms by upto 69% and 7.9% in performance for each of these tasks respectively.},
+abbr = {Arxiv},
+pdf = {https://arxiv.org/pdf/2512.25065},
+format = {Preprint},
+}
+
 @inproceedings{GalileoNSDI,
 title = {Towards Performance Robustness for Microservices},
 author = {Divyanshu Saxena and Gaurav Vipat and Jiaxin Lin and  Jingbo Wang and  Isil Dillig and Sanjay Shakkottai and Aditya Akella},
@@ -280,6 +292,7 @@ location = {Rennes, France},
 abbr = {EuroSys '22},
 format = {Conference},
 slides = {medes_slides.pdf},
+selected = {true},
 }
 
 @inproceedings{NSDIPoster,
