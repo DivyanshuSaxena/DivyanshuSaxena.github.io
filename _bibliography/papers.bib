@@ -1,4 +1,14 @@
-@msic{VulcanArxiv,
+@inproceedings{MatchBox,
+title = {MatchBox: A Semantic Foundation for Data Plane Portability},
+author = {Eric Hayden Campbell and Robert Zhang and Divyanshu Saxena and Aditya Akella and Isil Dillig},
+year = {2026},
+abstract={Match-action tables form the core abstraction for programming network packet-processing systems, from fixed-function switches to eBPF-based software dataplanes. However, their concrete syntax and semantics vary widely across targets, reflecting differences in hardware generations, engineering practices, and vendor design choices. As a result, portability of these programs across different environments becomes a persistent challenge. This paper presents MatchBox, a system for translating match–action programs across heterogeneous environments. At its core is the Match Algebra, a compositional formalism for expressing transformations on match–action tables in a concise and declarative manner. To ensure unambiguous semantics, MatchBox introduces a static type system based on guarded functional dependencies (GFDs) that guarantee every well- typed Match Algebra expression denotes a mathematical function. Given such an expression, the MatchBox compiler automatically realizes it as a set of match–action tables for the target environment, efficiently producing compact match-action tables that are semantically faithful to the specification. To demonstrate the usefulness and practicality of MatchBox, we evaluate it on realistic portability challenges across the network stack and show that it enables concise, declarative specifications which can be effectively realized into compact match-action tables.},
+location = {San Diego, CA, USA},
+abbr = {PLDI '26},
+format = {Conference},
+}
+
+@misc{VulcanArxiv,
 title = {Vulcan: Instance-Optimal Systems Heuristics Through LLM-Driven Search},
 author = {Rohit Dwivedula and Divyanshu Saxena and Sujay Yadalam and Daehyeok Kim and Aditya Akella},
 year = {2026},
