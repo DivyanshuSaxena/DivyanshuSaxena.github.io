@@ -11,7 +11,6 @@ nav: true
   // Make a dictionary of categories and their corresponding items
   const venues = {
     "Conference": ["Conference"],
-    "Preprints": ["Preprint"],
     "Workshop and Short Papers": ["Journal", "Workshop", "Short Paper", "Poster"],
   };
 
@@ -23,7 +22,12 @@ nav: true
     document.querySelectorAll(".bibliography > li").forEach((element) => {
       // Get the value of the element in .row > .abbr > format
       const format = element.querySelector(".row > .abbr > format").textContent;
-      if (category !== "All" && !venues[category].includes(format)) {
+      const isRepresentative = element.querySelector(".row > .abbr").dataset.representative === "true";
+      if (category === "Representative") {
+        if (!isRepresentative) {
+          element.classList.add("unloaded");
+        }
+      } else if (category !== "All" && !venues[category].includes(format)) {
         element.classList.add("unloaded");
       }
     });

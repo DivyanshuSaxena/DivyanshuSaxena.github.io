@@ -463,6 +463,14 @@ footer.sticky-bottom {
           font-weight: 400;
         }
       }
+      .note {
+        display: inline-block;
+        font-size: 0.8rem;
+        margin-top: 0.15rem;
+        padding: 0.1rem 0.4rem;
+        border-radius: 3px;
+        background-color: var(--global-code-bg-color);
+      }
       .links {
         a.btn {
           color: var(--global-text-color);

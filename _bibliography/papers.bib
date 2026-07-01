@@ -5,6 +5,11 @@ year = {2026},
 abstract={Match-action tables form the core abstraction for programming network packet-processing systems, from fixed-function switches to eBPF-based software dataplanes. However, their concrete syntax and semantics vary widely across targets, reflecting differences in hardware generations, engineering practices, and vendor design choices. As a result, portability of these programs across different environments becomes a persistent challenge. This paper presents MatchBox, a system for translating match–action programs across heterogeneous environments. At its core is the Match Algebra, a compositional formalism for expressing transformations on match–action tables in a concise and declarative manner. To ensure unambiguous semantics, MatchBox introduces a static type system based on guarded functional dependencies (GFDs) that guarantee every well- typed Match Algebra expression denotes a mathematical function. Given such an expression, the MatchBox compiler automatically realizes it as a set of match–action tables for the target environment, efficiently producing compact match-action tables that are semantically faithful to the specification. To demonstrate the usefulness and practicality of MatchBox, we evaluate it on realistic portability challenges across the network stack and show that it enables concise, declarative specifications which can be effectively realized into compact match-action tables.},
 location = {San Diego, CA, USA},
 abbr = {PLDI '26},
+url = {https://dl.acm.org/doi/10.1145/3808277},
+pdf = {https://dl.acm.org/doi/pdf/10.1145/3808277},
+code = {https://zenodo.org/records/19618587},
+note = {<i class="fas fa-trophy"></i> Distinguished Paper Award},
+representative = {true},
 format = {Conference},
 }
 
@@ -17,6 +22,8 @@ We propose a new alternative: synthesizing instance-optimal heuristics -- specia
 We use Vulcan to synthesize performant heuristics for cache eviction and memory tiering, and find that these heuristics outperform all human-designed state-of-the-art algorithms by upto 69% and 7.9% in performance for each of these tasks respectively.},
 abbr = {Arxiv},
 pdf = {https://arxiv.org/pdf/2512.25065},
+url = {https://arxiv.org/abs/2512.25065},
+representative = {true},
 format = {Preprint},
 }
 
@@ -31,6 +38,9 @@ location = {Renton, WA, USA},
 abbr = {NSDI '26},
 pdf = {galileo_nsdi26.pdf},
 code = {https://github.com/ldos-project/Galileo},
+representative = {true},
+url = {https://www.usenix.org/conference/nsdi26/presentation/saxena},
+slides = {galileo_slides.pdf},
 format = {Conference},
 selected = {true},
 }
@@ -44,6 +54,7 @@ location = {Rio de Janeiro, Brazil},
 ws = {LLM4Code},
 abbr = {ICSE '26},
 pdf = {https://arxiv.org/pdf/2511.10049},
+url = {https://arxiv.org/abs/2511.10049},
 format = {Workshop},
 }
 
@@ -53,7 +64,8 @@ author = {Alireza Sanaee and Vahab Jabrayilov and Ilias Marinos and Farbod Shahi
 year = {2026},
 abstract={Despite a decade of research, most high-performance userspace network stacks remain impractical for public cloud tenants developing their applications atop Virtual Machines (VMs). We identify two root causes: (1) reliance on specialized NIC features (e.g., flow steering, deep buffers) absent in commodity cloud vNICs, and (2) rigid execution models ill-suited to diverse application needs. We present CNet, a high-performance and flexible userspace network stack designed for public cloud VMs. CNet uses only a minimal set of vNIC features that any major cloud provider supports. It also relies on a microkernel architecture to enable flexible application execution. We evaluate CNet across three major public clouds and on production-grade applications, including a key-value store, an HTTP server, and a state-machine replication system. CNet is open-source, with the code to be released upon publication.},
 location = {Pittsburgh, PA, USA},
-pdf = {https://arxiv.org/pdf/2502.09281},
+url = {https://dl.acm.org/doi/10.1145/3779212.3790158},
+pdf = {https://dl.acm.org/doi/pdf/10.1145/3779212.3790158},
 abbr = {ASPLOS '26},
 format = {Conference},
 }
@@ -65,8 +77,9 @@ year = {2026},
 abstract={Learning-based congestion controllers offer better adaptability compared to traditional heuristics. However, the unreliability of learning techniques can cause learning-based controllers to behave poorly, creating a need for formal guarantees. While methods for formally verifying learned congestion controllers exist, these methods offer binary feedback that cannot optimize the controller toward better behavior. We improve this state-of-the-art via Canopy, a new property-driven framework that integrates learning with formal reasoning in the learning loop. Canopy uses novel quantitative certification with an abstract interpreter to guide the training process, rewarding models, and evaluating robust and safe model performance on worst-case inputs. Our evaluation demonstrates that unlike state-of-the-art learned controllers, Canopy-trained controllers provide both adaptability and worst-case reliability across a range of network conditions.},
 location = {Edinburgh, Scotland},
 abbr = {EuroSys '26},
-url = {https://arxiv.org/abs/2412.10915},
+url = {https://dl.acm.org/doi/10.1145/3767295.3769362},
 code = {https://github.com/ldos-project/Canopy},
+pdf = {https://arxiv.org/pdf/2412.10915},
 format = {Conference},
 selected = {true},
 }
@@ -94,6 +107,7 @@ url = {https://dl.acm.org/doi/10.1145/3772356.3772413},
 pdf = {https://dl.acm.org/doi/pdf/10.1145/3772356.3772413},
 code = {https://github.com/ldos-project/policysmith},
 abbr = {HotNets '25},
+representative = {true},
 format = {Workshop},
 selected = {true}
 }
@@ -106,6 +120,7 @@ abstract={While machine learning has been adopted across various fields, its abi
 location = {Banff, Canada},
 url = {https://dl.acm.org/doi/10.1145/3713082.3730384},
 abbr = {HotOS '25},
+representative = {true},
 format = {Workshop},
 pdf = {hotos25.pdf},
 slides = {hotos25_slides.pdf},
@@ -121,6 +136,7 @@ abstract={We address the challenge of zeroth-order online convex optimization wh
 url={https://openreview.net/forum?id=4BFzTrIjPN},
 location = {Singapore},
 abbr = {ICLR '25},
+representative = {true},
 format = {Conference},
 pdf = {https://openreview.net/pdf?id=4BFzTrIjPN},
 }
@@ -137,8 +153,10 @@ code = {https://github.com/utnslab/wire-mesh},
 pdf = {copper.pdf},
 doi = {10.1145/3669940.3707257},
 abbr = {ASPLOS '25},
+representative = {true},
 format = {Conference},
 slides = {copper_slides.pdf},
+note = {Also appeared at NSDI 2023 as a poster},
 }
 
 @inproceedings{FM4OS,
@@ -300,17 +318,8 @@ pdf = {medes.pdf},
 doi = {10.1145/3492321.3524272},
 location = {Rennes, France},
 abbr = {EuroSys '22},
+representative = {true},
 format = {Conference},
 slides = {medes_slides.pdf},
 selected = {true},
-}
-
-@inproceedings{NSDIPoster,
-author = {Divyanshu Saxena and Saksham Goel and William Zhang and Madhav Tummala and Aditya Akella},
-title = {Application-tailored Communication with xMesh.},
-booktitle={Poster session of NSDI '23: 20th USENIX Symposium on Networked Systems Design and Implementation},
-year = {2023},
-location = {Boston, MA},
-abbr = {NSDI '23},
-format = {Poster}
 }
