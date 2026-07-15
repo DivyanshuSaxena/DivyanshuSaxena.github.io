@@ -1,3 +1,14 @@
+@inproceedings{TierSizer,
+title = {TierSizer: Counterfactual Reasoning for DRAM Sizing in Tiered Memory Systems},
+author = {Sujay Yadalam and Saarth Deshpande and Divyanshu Saxena and Venkat Arun and Neeraja Yadwadkar and Aditya Akella},
+year = {2026},
+abstract={Compute Express Link (CXL) enables cost-effective memory capacity expansion by placing additional tiers behind a coherent fabric. To overcome the performance loss induced by the higher latency of CXL, tiering systems keep hot data in DRAM and demote cold data to the slower tiers. While most research has focused on the data placement problem, very little addresses the basic operational question: how much DRAM does an application actually need to meet a performance target on a tiered system? Too much DRAM wastes the savings that motivated tiering; too little degrades performance. The right size is workload-dependent and drifts over time, so operators today over-provision conservatively or accept silent slowdowns. We observe that sizing DRAM is the same problem as predicting an application’s slowdown at neighboring DRAM sizes — a counterfactual that must be answered while the workload runs, without instantiating the size. We show this counterfactual is answerable online from commodity system metrics using two simple analytical models, one for the change in LLC-miss stalls and one for migration overhead. We build TierSizer, an online predictor and controller that steps DRAM toward its minimum in small increments, keeping performance within a target and avoiding tail-latency spikes. On a diverse set of workloads atop a state-of-the-art tiering system, TierSizer saves up to 75% DRAM over a 2:1 configuration while staying within 5% of baseline performance.},
+location = {Prague, Czechia},
+ws = {DIMES},
+abbr = {SOSP '26},
+format = {Workshop},
+}
+
 @inproceedings{MatchBox,
 title = {MatchBox: A Semantic Foundation for Data Plane Portability},
 author = {Eric Hayden Campbell and Robert Zhang and Divyanshu Saxena and Aditya Akella and Isil Dillig},
@@ -53,8 +64,8 @@ abstract={The rapid adoption of AI agents across domains has made systematic eva
 location = {Rio de Janeiro, Brazil},
 ws = {LLM4Code},
 abbr = {ICSE '26},
-pdf = {https://arxiv.org/pdf/2511.10049},
-url = {https://arxiv.org/abs/2511.10049},
+pdf = {https://dl.acm.org/doi/pdf/10.1145/3786181.3788708},
+url = {https://dl.acm.org/doi/10.1145/3786181.3788708},
 format = {Workshop},
 }
 
