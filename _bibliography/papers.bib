@@ -1,3 +1,17 @@
+@inproceedings{VulcanEuroSys,
+title = {Vulcan: Instance-specialized, Verifiable Systems Heuristics Through LLM-driven Search},
+author = {Rohit Dwivedula and Divyanshu Saxena and Sujay Yadalam and Eric Hayden Campbell and Daehyeok Kim and Aditya Akella},
+year = {2027},
+abstract={Systems resource management tasks rely primarily on hand-designed heuristics. However, growing hardware heterogeneity and workload diversity require heuristics specialized to particular deployment instances, making manual design expensive and difficult to scale. In this paper, we explore how to synthesize systems heuristics using LLMs. The main challenge is ensuring that generated heuristics execute safely, integrate correctly with the surrounding system, and still achieve strong performance. We propose Vulcan, a framework that identifies LLM-friendly interfaces that isolate core decision logic from the rest of the implementation. With Vulcan, LLM-generated code is restricted to simple stateless decision functions, while trusted runtime abstractions provide rich derived statistics for meaningful policy exploration without system-integration bugs. To ensure execution safety, LLMs synthesize heuristics in a restricted language, Anvil, that guarantees important properties by construction. We evaluate Vulcan across three well-studied domains and demonstrate up to 4.9x higher savings for spot-VM scheduling, up to 2x lower miss ratios for cache eviction, and up to 10% higher application performance for tiered-memory systems, while ensuring execution safety throughout.},
+abbr = {EuroSys '27},
+pdf = {https://arxiv.org/pdf/2512.25065},
+url = {https://arxiv.org/abs/2512.25065},
+code = {https://github.com/ldos-project/vulcan-usecases},
+representative = {true},
+format = {Conference},
+selected = {true}
+}
+
 @inproceedings{TierSizer,
 title = {TierSizer: Counterfactual Reasoning for DRAM Sizing in Tiered Memory Systems},
 author = {Sujay Yadalam and Saarth Deshpande and Divyanshu Saxena and Venkat Arun and Neeraja Yadwadkar and Aditya Akella},
@@ -21,20 +35,6 @@ pdf = {https://dl.acm.org/doi/pdf/10.1145/3808277},
 code = {https://zenodo.org/records/19618587},
 note = {<i class="fas fa-trophy"></i> Distinguished Paper Award},
 format = {Conference},
-}
-
-@misc{VulcanArxiv,
-title = {Vulcan: Instance-Optimal Systems Heuristics Through LLM-Driven Search},
-author = {Rohit Dwivedula and Divyanshu Saxena and Sujay Yadalam and Daehyeok Kim and Aditya Akella},
-year = {2026},
-abstract={Resource-management tasks in modern operating and distributed systems continue to rely primarily on hand-designed heuristics for tasks such as scheduling, caching, or active queue management. Designing performant heuristics is an expensive, time-consuming process that we are forced to continuously go through due to the constant flux of hardware, workloads and environments.
-We propose a new alternative: synthesizing instance-optimal heuristics -- specialized for the exact workloads and hardware where they will be deployed -- using code-generating large language models (LLMs). To make this synthesis tractable, Vulcan separates policy and mechanism through LLM-friendly, task-agnostic interfaces. With these interfaces, users specify the inputs and objectives of their desired policy, while Vulcan searches for performant policies via evolutionary search over LLM-generated code. This interface is expressive enough to capture a wide range of system policies, yet sufficiently constrained to allow even small, inexpensive LLMs to generate correct and executable code.
-We use Vulcan to synthesize performant heuristics for cache eviction and memory tiering, and find that these heuristics outperform all human-designed state-of-the-art algorithms by upto 69% and 7.9% in performance for each of these tasks respectively.},
-abbr = {Arxiv},
-pdf = {https://arxiv.org/pdf/2512.25065},
-url = {https://arxiv.org/abs/2512.25065},
-representative = {true},
-format = {Preprint},
 }
 
 @inproceedings{GalileoNSDI,
@@ -119,8 +119,7 @@ pdf = {https://dl.acm.org/doi/pdf/10.1145/3772356.3772413},
 code = {https://github.com/ldos-project/policysmith},
 abbr = {HotNets '25},
 representative = {true},
-format = {Workshop},
-selected = {true}
+format = {Workshop}
 }
 
 @inproceedings{GuardrailsHotOS,

@@ -5,7 +5,7 @@ permalink: /projects/
 description:
 display_categories: [research, courses]
 horizontal: true
-nav: false
+nav: true
 published: false
 ---
 <div class="projects">
